@@ -48,7 +48,7 @@
     "fileMetadataFiles": [],
     "template": [
       "default",
-      "./_template"
+      "./_template/default"
     ],
     "postProcessors": [],
     "noLangKeyword": false,

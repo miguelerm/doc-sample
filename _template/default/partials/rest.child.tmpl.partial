@@ -4,11 +4,11 @@
 {{#docurl}}
 <span class="small pull-right mobile-hide">
   <span class="divider">|</span>
-  <a href="{{docurl}}">Improve this Doc</a>
+  <a href="{{docurl}}">Mejorar este documento</a>
 </span>{{/docurl}}
 {{#sourceurl}}
 <span class="small pull-right mobile-hide">
-  <a href="{{sourceurl}}">View Source</a>
+  <a href="{{sourceurl}}">Ver fuente</a>
 </span>{{/sourceurl}}
 {{/_disableContribution}}
  <h3 id="{{htmlId}}" data-uid="{{uid}}" class="text-capitalize">{{operationId}}</h3>
@@ -26,14 +26,14 @@
   <pre><code class="lang-restApi hljs">{{operation}} {{path}}</code></pre>
 </div>
 {{#parameters.0}}
-<h5>Parameters</h5>
+<h5>Par&aacute;metros</h5>
 <table class="table table-bordered table-striped table-condensed">
   <thead>
     <tr>
-      <th>Name</th>
-      <th>Type</th>
-      <th>Value</th>
-      <th>Notes</th>
+      <th>Nombre</th>
+      <th>Tipo</th>
+      <th>Valor</th>
+      <th>Notas</th>
     </tr>
   </thead>
   <tbody>
@@ -56,9 +56,9 @@
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
-        <th>Status Code</th>
-        <th>Description</th>
-        <th>Samples</th>
+        <th>C&oacute;digo</th>
+        <th>Descripci&oacute;n</th>
+        <th>Ejemplos</th>
       </tr>
     </thead>
     <tbody>
