@@ -43,22 +43,12 @@
         ]
       }
     ],
-    "overwrite": [
-      {
-        "files": [
-          "apidoc/**.md"
-        ],
-        "exclude": [
-          "obj/**",
-          "docs/**"
-        ]
-      }
-    ],
     "dest": "docs",
     "globalMetadataFiles": [],
     "fileMetadataFiles": [],
     "template": [
-      "default"
+      "default",
+      "./_template"
     ],
     "postProcessors": [],
     "noLangKeyword": false,
