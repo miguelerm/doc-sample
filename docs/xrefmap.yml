@@ -1,0 +1,99 @@
+### YamlMime:XRefMap
+sorted: true
+references:
+- uid: Libreria
+  name: Libreria
+  href: api/Libreria.html
+  commentId: N:Libreria
+  fullName: Libreria
+  nameWithType: Libreria
+- uid: Libreria.MiClase
+  name: MiClase
+  href: api/Libreria.MiClase.html
+  commentId: T:Libreria.MiClase
+  fullName: Libreria.MiClase
+  nameWithType: MiClase
+- uid: Libreria.MiClase.#ctor
+  name: MiClase()
+  href: api/Libreria.MiClase.html#Libreria_MiClase__ctor
+  commentId: M:Libreria.MiClase.#ctor
+  fullName: Libreria.MiClase.MiClase()
+  nameWithType: MiClase.MiClase()
+- uid: Libreria.MiClase.#ctor*
+  name: MiClase
+  href: api/Libreria.MiClase.html#Libreria_MiClase__ctor_
+  commentId: Overload:Libreria.MiClase.#ctor
+  fullName: Libreria.MiClase.MiClase
+  nameWithType: MiClase.MiClase
+- uid: Libreria.MiClase.MiMetodo(System.Int32,System.String)
+  name: MiMetodo(Int32, String)
+  href: api/Libreria.MiClase.html#Libreria_MiClase_MiMetodo_System_Int32_System_String_
+  commentId: M:Libreria.MiClase.MiMetodo(System.Int32,System.String)
+  fullName: Libreria.MiClase.MiMetodo(System.Int32, System.String)
+  nameWithType: MiClase.MiMetodo(Int32, String)
+- uid: Libreria.MiClase.MiMetodo*
+  name: MiMetodo
+  href: api/Libreria.MiClase.html#Libreria_MiClase_MiMetodo_
+  commentId: Overload:Libreria.MiClase.MiMetodo
+  fullName: Libreria.MiClase.MiMetodo
+  nameWithType: MiClase.MiMetodo
+- uid: Libreria.MiModelo
+  name: MiModelo
+  href: api/Libreria.MiModelo.html
+  commentId: T:Libreria.MiModelo
+  fullName: Libreria.MiModelo
+  nameWithType: MiModelo
+- uid: Libreria.MiModelo.#ctor
+  name: MiModelo()
+  href: api/Libreria.MiModelo.html#Libreria_MiModelo__ctor
+  commentId: M:Libreria.MiModelo.#ctor
+  fullName: Libreria.MiModelo.MiModelo()
+  nameWithType: MiModelo.MiModelo()
+- uid: Libreria.MiModelo.#ctor*
+  name: MiModelo
+  href: api/Libreria.MiModelo.html#Libreria_MiModelo__ctor_
+  commentId: Overload:Libreria.MiModelo.#ctor
+  fullName: Libreria.MiModelo.MiModelo
+  nameWithType: MiModelo.MiModelo
+- uid: Libreria.MiModelo.Id
+  name: Id
+  href: api/Libreria.MiModelo.html#Libreria_MiModelo_Id
+  commentId: P:Libreria.MiModelo.Id
+  fullName: Libreria.MiModelo.Id
+  nameWithType: MiModelo.Id
+- uid: Libreria.MiModelo.Id*
+  name: Id
+  href: api/Libreria.MiModelo.html#Libreria_MiModelo_Id_
+  commentId: Overload:Libreria.MiModelo.Id
+  fullName: Libreria.MiModelo.Id
+  nameWithType: MiModelo.Id
+- uid: Libreria.MiModelo.Nombre
+  name: Nombre
+  href: api/Libreria.MiModelo.html#Libreria_MiModelo_Nombre
+  commentId: P:Libreria.MiModelo.Nombre
+  fullName: Libreria.MiModelo.Nombre
+  nameWithType: MiModelo.Nombre
+- uid: Libreria.MiModelo.Nombre*
+  name: Nombre
+  href: api/Libreria.MiModelo.html#Libreria_MiModelo_Nombre_
+  commentId: Overload:Libreria.MiModelo.Nombre
+  fullName: Libreria.MiModelo.Nombre
+  nameWithType: MiModelo.Nombre
+- uid: Web API Swagger specification/1.0.0
+  name: Web API Swagger specification
+  href: restapi/demo.html
+- uid: Web API Swagger specification/1.0.0/Clientes_Delete
+  name: Clientes_Delete
+  href: restapi/demo.html#Web_API_Swagger_specification_1_0_0_Clientes_Delete
+- uid: Web API Swagger specification/1.0.0/Clientes_Get
+  name: Clientes_Get
+  href: restapi/demo.html#Web_API_Swagger_specification_1_0_0_Clientes_Get
+- uid: Web API Swagger specification/1.0.0/Clientes_Get2
+  name: Clientes_Get2
+  href: restapi/demo.html#Web_API_Swagger_specification_1_0_0_Clientes_Get2
+- uid: Web API Swagger specification/1.0.0/Clientes_Post
+  name: Clientes_Post
+  href: restapi/demo.html#Web_API_Swagger_specification_1_0_0_Clientes_Post
+- uid: Web API Swagger specification/1.0.0/Clientes_Put
+  name: Clientes_Put
+  href: restapi/demo.html#Web_API_Swagger_specification_1_0_0_Clientes_Put

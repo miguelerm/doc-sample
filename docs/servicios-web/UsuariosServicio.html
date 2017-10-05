@@ -1,0 +1,205 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Servicio usuarios </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Servicio usuarios ">
+    <meta name="generator" content="docfx 2.24.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="servicio-usuarios">Servicio usuarios</h1>
+
+<p>Este es un servicio SOAP y su descipcion en WSDL se encuentra en este link <a href="UsuariosServicio.wsdl">UsuariosServicio.wsdl</a>.</p>
+<p>La mayoría de IDES generan un proxy que pueden consumir en el lenguaje y plataforma de su preferencia.</p>
+<p>Este servicio se compone de los siguientes metodos:</p>
+<ul>
+<li>ObtenerUsuarios</li>
+</ul>
+<h2 id="obtener-usuarios">Obtener Usuarios</h2>
+<p>Obtiene todos los usuarios</p>
+<h3 id="soap-11">SOAP 1.1</h3>
+<p>The following is a sample SOAP 1.1 request and response. The placeholders shown need to be replaced with actual values.</p>
+<pre><code>POST /UsuariosServicio.asmx HTTP/1.1
+Host: localhost
+Content-Type: text/xml; charset=utf-8
+Content-Length: length
+SOAPAction: &quot;https://miguelerm.github.io/servicios/ObtenerUsuarios&quot;
+
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;
+&lt;soap:Envelope xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:soap=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot;&gt;
+  &lt;soap:Body&gt;
+    &lt;ObtenerUsuarios xmlns=&quot;https://miguelerm.github.io/servicios/&quot; /&gt;
+  &lt;/soap:Body&gt;
+&lt;/soap:Envelope&gt;
+</code></pre><pre><code>HTTP/1.1 200 OK
+Content-Type: text/xml; charset=utf-8
+Content-Length: length
+
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;
+&lt;soap:Envelope xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:soap=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot;&gt;
+  &lt;soap:Body&gt;
+    &lt;ObtenerUsuariosResponse xmlns=&quot;https://miguelerm.github.io/servicios/&quot;&gt;
+      &lt;ObtenerUsuariosResult&gt;
+        &lt;UsuarioModelo&gt;
+          &lt;Id&gt;int&lt;/Id&gt;
+          &lt;Nombre&gt;string&lt;/Nombre&gt;
+        &lt;/UsuarioModelo&gt;
+        &lt;UsuarioModelo&gt;
+          &lt;Id&gt;int&lt;/Id&gt;
+          &lt;Nombre&gt;string&lt;/Nombre&gt;
+        &lt;/UsuarioModelo&gt;
+      &lt;/ObtenerUsuariosResult&gt;
+    &lt;/ObtenerUsuariosResponse&gt;
+  &lt;/soap:Body&gt;
+&lt;/soap:Envelope&gt;
+</code></pre><h3 id="soap-12">SOAP 1.2</h3>
+<p>The following is a sample SOAP 1.2 request and response. The placeholders shown need to be replaced with actual values.</p>
+<pre><code>POST /UsuariosServicio.asmx HTTP/1.1
+Host: localhost
+Content-Type: application/soap+xml; charset=utf-8
+Content-Length: length
+
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;
+&lt;soap12:Envelope xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:soap12=&quot;http://www.w3.org/2003/05/soap-envelope&quot;&gt;
+  &lt;soap12:Body&gt;
+    &lt;ObtenerUsuarios xmlns=&quot;https://miguelerm.github.io/servicios/&quot; /&gt;
+  &lt;/soap12:Body&gt;
+&lt;/soap12:Envelope&gt;
+</code></pre><pre><code>HTTP/1.1 200 OK
+Content-Type: application/soap+xml; charset=utf-8
+Content-Length: length
+
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;
+&lt;soap12:Envelope xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:soap12=&quot;http://www.w3.org/2003/05/soap-envelope&quot;&gt;
+  &lt;soap12:Body&gt;
+    &lt;ObtenerUsuariosResponse xmlns=&quot;https://miguelerm.github.io/servicios/&quot;&gt;
+      &lt;ObtenerUsuariosResult&gt;
+        &lt;UsuarioModelo&gt;
+          &lt;Id&gt;int&lt;/Id&gt;
+          &lt;Nombre&gt;string&lt;/Nombre&gt;
+        &lt;/UsuarioModelo&gt;
+        &lt;UsuarioModelo&gt;
+          &lt;Id&gt;int&lt;/Id&gt;
+          &lt;Nombre&gt;string&lt;/Nombre&gt;
+        &lt;/UsuarioModelo&gt;
+      &lt;/ObtenerUsuariosResult&gt;
+    &lt;/ObtenerUsuariosResponse&gt;
+  &lt;/soap12:Body&gt;
+&lt;/soap12:Envelope&gt;
+</code></pre><h3 id="http-post">HTTP POST</h3>
+<p>The following is a sample HTTP POST request and response. The placeholders shown need to be replaced with actual values.</p>
+<pre><code>POST /UsuariosServicio.asmx/ObtenerUsuarios HTTP/1.1
+Host: localhost
+Content-Type: application/x-www-form-urlencoded
+Content-Length: length
+</code></pre><pre><code>HTTP/1.1 200 OK
+Content-Type: text/xml; charset=utf-8
+Content-Length: length
+
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;
+&lt;ArrayOfUsuarioModelo xmlns=&quot;https://miguelerm.github.io/servicios/&quot;&gt;
+  &lt;UsuarioModelo&gt;
+    &lt;Id&gt;int&lt;/Id&gt;
+    &lt;Nombre&gt;string&lt;/Nombre&gt;
+  &lt;/UsuarioModelo&gt;
+  &lt;UsuarioModelo&gt;
+    &lt;Id&gt;int&lt;/Id&gt;
+    &lt;Nombre&gt;string&lt;/Nombre&gt;
+  &lt;/UsuarioModelo&gt;
+&lt;/ArrayOfUsuarioModelo&gt;
+</code></pre></article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Copyright © 2015-2017 Microsoft<br>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
