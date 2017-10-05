@@ -88,9 +88,9 @@ references:
 - uid: Web API Swagger specification/1.0.0/Clientes_Get
   name: Clientes_Get
   href: restapi/demo.html#Web_API_Swagger_specification_1_0_0_Clientes_Get
-- uid: Web API Swagger specification/1.0.0/Clientes_Get2
-  name: Clientes_Get2
-  href: restapi/demo.html#Web_API_Swagger_specification_1_0_0_Clientes_Get2
+- uid: Web API Swagger specification/1.0.0/Clientes_GetAll
+  name: Clientes_GetAll
+  href: restapi/demo.html#Web_API_Swagger_specification_1_0_0_Clientes_GetAll
 - uid: Web API Swagger specification/1.0.0/Clientes_Post
   name: Clientes_Post
   href: restapi/demo.html#Web_API_Swagger_specification_1_0_0_Clientes_Post

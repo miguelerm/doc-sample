@@ -18,13 +18,16 @@
         "tags": [
           "Clientes"
         ],
-        "operationId": "Clientes_Get",
+        "operationId": "Clientes_GetAll",
         "parameters": [],
         "responses": {
           "200": {
             "description": "",
             "schema": {
-              "$ref": "#/definitions/ClienteResumenModelo"
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/ClienteResumenModelo"
+              }
             },
             "x-nullable": true
           }
@@ -68,7 +71,7 @@
         "tags": [
           "Clientes"
         ],
-        "operationId": "Clientes_Get2",
+        "operationId": "Clientes_Get",
         "parameters": [
           {
             "type": "integer",
@@ -88,9 +91,7 @@
             "x-nullable": true
           },
           "404": {
-            "description": "Si no existe ningun cliente con el id indicado.",
-            "schema": {},
-            "x-nullable": true
+            "description": "Si no existe ningun cliente con el id indicado."
           }
         }
       },
@@ -129,9 +130,7 @@
             "x-nullable": true
           },
           "404": {
-            "description": "Si no existe ningun cliente con el id indicado.",
-            "schema": {},
-            "x-nullable": true
+            "description": "Si no existe ningun cliente con el id indicado."
           }
         }
       },
@@ -151,10 +150,11 @@
           }
         ],
         "responses": {
+          "204": {
+            "description": ""
+          },
           "404": {
-            "description": "Si no existe ningun cliente con el id indicado.",
-            "schema": {},
-            "x-nullable": true
+            "description": "Si no existe ningun cliente con el id indicado."
           }
         }
       }
