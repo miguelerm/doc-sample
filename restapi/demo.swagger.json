@@ -1,0 +1,355 @@
+﻿{
+  "x-generator": "NSwag v11.9.0.0 (NJsonSchema v9.7.1.0 (Newtonsoft.Json v9.0.0.0))",
+  "swagger": "2.0",
+  "info": {
+    "title": "Web API Swagger specification",
+    "version": "1.0.0"
+  },
+  "schemes": [],
+  "consumes": [
+    "application/json"
+  ],
+  "produces": [
+    "application/json"
+  ],
+  "paths": {
+    "/api/Clientes": {
+      "get": {
+        "tags": [
+          "Clientes"
+        ],
+        "operationId": "Clientes_Get",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/ClienteResumenModelo"
+            },
+            "x-nullable": true
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Clientes"
+        ],
+        "operationId": "Clientes_Post",
+        "parameters": [
+          {
+            "name": "cliente",
+            "in": "body",
+            "schema": {
+              "$ref": "#/definitions/ClienteCrearEditarModelo"
+            },
+            "x-nullable": true
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/ClienteDetalleModelo"
+            },
+            "x-nullable": true
+          },
+          "400": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/ModelStateDictionary"
+            },
+            "x-nullable": true
+          }
+        }
+      }
+    },
+    "/api/Clientes/{id}": {
+      "get": {
+        "tags": [
+          "Clientes"
+        ],
+        "operationId": "Clientes_Get2",
+        "parameters": [
+          {
+            "type": "integer",
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "x-nullable": false,
+            "format": "int32"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/ClienteDetalleModelo"
+            },
+            "x-nullable": true
+          },
+          "404": {
+            "description": "Si no existe ningun cliente con el id indicado.",
+            "schema": {},
+            "x-nullable": true
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Clientes"
+        ],
+        "operationId": "Clientes_Put",
+        "parameters": [
+          {
+            "type": "integer",
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "x-nullable": false,
+            "format": "int32"
+          },
+          {
+            "name": "cliente",
+            "in": "body",
+            "schema": {
+              "$ref": "#/definitions/ClienteCrearEditarModelo"
+            },
+            "x-nullable": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          },
+          "400": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/ModelStateDictionary"
+            },
+            "x-nullable": true
+          },
+          "404": {
+            "description": "Si no existe ningun cliente con el id indicado.",
+            "schema": {},
+            "x-nullable": true
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Clientes"
+        ],
+        "operationId": "Clientes_Delete",
+        "parameters": [
+          {
+            "type": "integer",
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "x-nullable": false,
+            "format": "int32"
+          }
+        ],
+        "responses": {
+          "404": {
+            "description": "Si no existe ningun cliente con el id indicado.",
+            "schema": {},
+            "x-nullable": true
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "ClienteResumenModelo": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id"
+      ],
+      "properties": {
+        "id": {
+          "type": "integer",
+          "format": "int32"
+        },
+        "nombre": {
+          "type": "string"
+        }
+      }
+    },
+    "ClienteDetalleModelo": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "fecha",
+        "estaActivo"
+      ],
+      "properties": {
+        "id": {
+          "type": "integer",
+          "format": "int32"
+        },
+        "nombre": {
+          "type": "string"
+        },
+        "fecha": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "estaActivo": {
+          "type": "boolean"
+        }
+      }
+    },
+    "ClienteCrearEditarModelo": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "nombre"
+      ],
+      "properties": {
+        "nombre": {
+          "type": "string",
+          "maxLength": 100
+        }
+      }
+    },
+    "ModelStateDictionary": {
+      "type": "object",
+      "description": "Represents the state of an attempt to bind a posted form to an action method, which includes validation information.",
+      "additionalProperties": false,
+      "required": [
+        "count",
+        "isReadOnly",
+        "isValid"
+      ],
+      "properties": {
+        "count": {
+          "type": "integer",
+          "description": "Gets the number of key/value pairs in the collection.",
+          "format": "int32"
+        },
+        "isReadOnly": {
+          "type": "boolean",
+          "description": "Gets a value that indicates whether the collection is read-only."
+        },
+        "isValid": {
+          "type": "boolean",
+          "description": "Gets a value that indicates whether this instance of the model-state dictionary is valid."
+        },
+        "keys": {
+          "type": "array",
+          "description": "Gets a collection that contains the keys in the dictionary.",
+          "items": {
+            "type": "string"
+          }
+        },
+        "values": {
+          "type": "array",
+          "description": "Gets a collection that contains the values in the dictionary.",
+          "items": {
+            "$ref": "#/definitions/ModelState"
+          }
+        },
+        "item": {
+          "$ref": "#/definitions/ModelState"
+        }
+      }
+    },
+    "ModelState": {
+      "type": "object",
+      "description": "Encapsulates the state of model binding to a property of an action-method argument, or to the argument itself.",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "description": "Gets a  object that encapsulates the value that was being bound during model binding.",
+          "allOf": [
+            {
+              "$ref": "#/definitions/ValueProviderResult"
+            }
+          ]
+        },
+        "errors": {
+          "description": "Gets a  object that contains any errors that occurred during model binding.",
+          "allOf": [
+            {
+              "$ref": "#/definitions/ModelErrorCollection"
+            }
+          ]
+        }
+      }
+    },
+    "ValueProviderResult": {
+      "type": "object",
+      "description": "Represents the result of binding a value (such as from a form post or query string) to an action-method argument property, or to the argument itself.",
+      "additionalProperties": false,
+      "properties": {
+        "attemptedValue": {
+          "type": "string",
+          "description": "Gets or sets the raw value that is converted to a string for display."
+        },
+        "culture": {
+          "type": "string",
+          "description": "Gets or sets the culture."
+        },
+        "rawValue": {
+          "description": "Gets or set the raw value that is supplied by the value provider."
+        }
+      }
+    },
+    "ModelErrorCollection": {
+      "type": "object",
+      "description": "Represents a collection of  instances.",
+      "additionalProperties": false,
+      "allOf": [
+        {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/ModelError"
+          }
+        }
+      ]
+    },
+    "ModelError": {
+      "type": "object",
+      "description": "Represents an error that occurs during model binding.",
+      "additionalProperties": false,
+      "properties": {
+        "exception": {
+          "description": "Gets or sets the exception object.",
+          "allOf": [
+            {
+              "$ref": "#/definitions/Exception"
+            }
+          ]
+        },
+        "errorMessage": {
+          "type": "string",
+          "description": "Gets or sets the error message."
+        }
+      }
+    },
+    "Exception": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "message": {
+          "type": "string"
+        },
+        "innerException": {
+          "$ref": "#/definitions/Exception"
+        },
+        "stackTrace": {
+          "type": "string"
+        },
+        "source": {
+          "type": "string"
+        }
+      }
+    }
+  },
+  "parameters": {},
+  "responses": {},
+  "securityDefinitions": {}
+}

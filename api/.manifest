@@ -1,0 +1,10 @@
+{
+  "Libreria": "Libreria.yml",
+  "Libreria.MiClase": "Libreria.MiClase.yml",
+  "Libreria.MiClase.#ctor": "Libreria.MiClase.yml",
+  "Libreria.MiClase.MiMetodo(System.Int32,System.String)": "Libreria.MiClase.yml",
+  "Libreria.MiModelo": "Libreria.MiModelo.yml",
+  "Libreria.MiModelo.#ctor": "Libreria.MiModelo.yml",
+  "Libreria.MiModelo.Id": "Libreria.MiModelo.yml",
+  "Libreria.MiModelo.Nombre": "Libreria.MiModelo.yml"
+}

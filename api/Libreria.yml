@@ -1,0 +1,37 @@
+### YamlMime:ManagedReference
+items:
+- uid: Libreria
+  commentId: N:Libreria
+  id: Libreria
+  children:
+  - Libreria.MiClase
+  - Libreria.MiModelo
+  langs:
+  - csharp
+  - vb
+  name: Libreria
+  nameWithType: Libreria
+  fullName: Libreria
+  type: Namespace
+  assemblies:
+  - Libreria
+references:
+- uid: Libreria.MiClase
+  commentId: T:Libreria.MiClase
+  isExternal: true
+  name: MiClase
+  nameWithType: MiClase
+  fullName: Libreria.MiClase
+- uid: Libreria.MiModelo
+  commentId: T:Libreria.MiModelo
+  parent: Libreria
+  isExternal: true
+  name: MiModelo
+  nameWithType: MiModelo
+  fullName: Libreria.MiModelo
+- uid: Libreria
+  commentId: N:Libreria
+  isExternal: false
+  name: Libreria
+  nameWithType: Libreria
+  fullName: Libreria

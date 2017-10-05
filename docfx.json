@@ -1,27 +1,21 @@
 {
-  "metadata": [
-    {
-      "src": [
-        {
-          "files": [
-            "src/**.csproj"
-          ],
-          "exclude": [
-            "**/obj/**",
-            "**/bin/**",
-            "_site/**"
-          ]
-        }
-      ],
-      "dest": "api"
-    }
-  ],
   "build": {
     "content": [
       {
         "files": [
-          "api/**.yml",
-          "api/index.md"
+          "api/**.yml"
+        ]
+      },
+      {
+        "files": [
+          "restapi/**.json",
+          "restapi/toc.md"
+        ]
+      },
+      {
+        "files": [
+          "servicios-web/**.md",
+          "servicios-web/toc.md"
         ]
       },
       {
@@ -40,7 +34,8 @@
     "resource": [
       {
         "files": [
-          "images/**"
+          "images/**",
+          "servicios-web/**.wsdl"
         ],
         "exclude": [
           "obj/**",
